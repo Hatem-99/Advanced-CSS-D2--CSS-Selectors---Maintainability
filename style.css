@@ -1,0 +1,83 @@
+/* exercise 1 */
+
+
+
+
+
+/* exercise 2 */
+
+nav span {
+    
+}
+/* exercise 3 */
+
+div div p a {
+    
+}
+
+/* exercise 4 */
+
+main h3 + div{
+  
+}
+/* exercise 5 */
+
+main h3 + div hr{
+    background-color: red;
+}
+/* exercise 6 */
+
+nav span:nth-of-type(even){
+    
+}
+
+/* exercise 7 */
+
+.list-unstyled.mb-0 li{
+    
+} 
+
+/* exercise 8 */
+
+main a:nth-child(1){
+    
+} 
+
+/* exercise 9 */
+
+.blog-post ul li:nth-child(2){
+   
+}
+/* exercise 10 */
+
+.float-right.mb-3.mr-3{
+    
+}
+
+
+/* exercise 11 */
+
+.btn.btn-outline-secondary.disabled{
+   
+}
+
+/* exercise 12 */
+
+.blog-footer a[href="https://twitter.com/mdo"]{
+    
+}
+
+
+.redBackground{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
