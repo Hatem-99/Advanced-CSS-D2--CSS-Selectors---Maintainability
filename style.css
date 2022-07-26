@@ -1,70 +1,73 @@
+/* Write a selector to target the h1 in the first “hero” section */
 /* exercise 1 */
 
-
+div h1{
+    background-color: aqua;
+}
 
 
 
 /* exercise 2 */
-
+/* Write a selector to target every children of the navbar */
 nav span {
-    
+    background-color: wheat;
 }
 /* exercise 3 */
-
-div div p a {
-    
+/* Write a selector to target the “continue reading…” inside the jumbotron */
+.col-md-6:first-of-type .font-weight-bold {
+   background-color: brown;
 }
 
 /* exercise 4 */
-
-main h3 + div{
-  
+/* Write a selector to target the first blogpost */
+.blog-post:first-of-type {
+  background-color: black;
 }
 /* exercise 5 */
-
+/* Write a selector to target the first blogpost <hr> and turn it red */
 main h3 + div hr{
     background-color: red;
 }
 /* exercise 6 */
-
+/* Write a selector to target the “even” links in the navbar */
 nav span:nth-of-type(even){
-    
+    background-color: black;
 }
 
 /* exercise 7 */
-
+/* Write a selector to target all the <li> into the first ordered-list in the sidebar ( Archives ) */
 .list-unstyled.mb-0 li{
-    
+    background-color: aquamarine;
 } 
 
 /* exercise 8 */
-
-main a:nth-child(1){
-    
+/* Write a selector to target the second blog-post author */
+.blog-post-meta:nth-of-type(2)  a{
+    background-color: bisque;
 } 
 
 /* exercise 9 */
-
+/* Write a selector to target the second <li> in the third blog-post unordered-list */
 .blog-post ul li:nth-child(2){
-   
+   background-color: blue;
 }
 /* exercise 10 */
-
+/* Write a selector to target the “back to top” link you can find at the bottom-right corner */
 .float-right.mb-3.mr-3{
-    
+    background-color: blueviolet
 }
 
 
 /* exercise 11 */
-
+/* Write a selector to target the “Newer” button at the bottom */
 .btn.btn-outline-secondary.disabled{
-   
+   background-color: yellowgreen;
 }
 
 /* exercise 12 */
-
+/* Write a selector to target the footer’s second link */
 .blog-footer a[href="https://twitter.com/mdo"]{
-    
+    background-color: tomato;
 }
 
 

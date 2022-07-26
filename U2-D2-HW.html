@@ -306,7 +306,7 @@
                 <!-- /.blog-post -->
 
                 <nav class="blog-pagination">
-                    <a class="btn btn-outline-primary" href="#">Older</a>
+                    <a class="btn btn-outline-primary" href="#" onclick="removeBlog()">Older</a>
                     <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
                 </nav>
             </div>
@@ -387,40 +387,68 @@ changeColor()
 
 
         // Write a JavaScript functionality to change the background of the jumbotron
-         const changeBackgroundColor = function(){
-            let jumbotron = document.getElementsByTagName(".jumbotron")[0]
-            console.log(jumbotron)
-            
-            
-        }
-
-changeBackgroundColor() 
+    
         // Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
         const removeTwitter = function(){
-            let twitter = document.getElementsByTagName("a")[27];
-            twitter.remove()
+            let twitter = document.querySelector("aside div:nth-of-type(3) ol li:nth-of-type(2)");
+            twitter.style.display = "none"
+           
 
         }
     removeTwitter()
 
         // Write a JavaScript functionality to remove the first 50 characters in the first paragraph for every blog post
         const removeCarcters = function(){
-         let classes = document.getElementsByClassName("blog-post")
-         for(let paragraphs of classes){
-            let paragraph = document.getElementsByTagName("p")[1]
-            paragraph.style
-         }
-         
-
-        }
+         let classes = document.querySelectorAll(" .blog-post p:nth-of-type(2) ")
+         console.log(classes)
+        for(let i = 0; i < classes.length ; i++){
+            classes[i].innerText = classes[i].innerText.substring(50)
+        }}
 
 
         // Write a JavaScript functionality to add a new Blog Post (div with title and text)
+        const addNewBlog = function(){
+            let newDiv = document.createElement("div")
+            newDiv.classList.add("blog-post")
+            let newTitle = document.createElement("h2")
+            newTitle.innerText= "NEW TITLE"
+            let newParagraph = document.createElement("p")
+            newParagraph.innerText = "hewiufhnwiudfhwqdjiojsmwadwoiajd jadiwj dawjdm ajdadoiajd;am;a   awn dawdm;iwad "
+            newDiv.append(newTitle,newParagraph)
+           let lastBlog = document.querySelector(".blog-post:nth-of-type(3)")
+           lastBlog.after(newDiv)
+        
+        }
+        addNewBlog()
         // Write a JavaScript functionality to remove the last Blog Post when the user clicks on the "Older" button
+        const removeBlog = function(){
+        let newBlog = document.querySelector(".blog-post:nth-of-type(4)");
+         newBlog.style.display = "none"
 
+        }
         // Write a JavaScript functionality that will create an alert with the name of the author every time the user hovers the mouse on an author's name
-        // EXTRA Write a JavaScript functionality that will remove the corresponding parent card from the DOM, upon clicking on their “Continue reading” link
-    </script>
+        
+            let authors = document.querySelectorAll(".blog-post .blog-post-meta a")
+            
+            const alertName = function(e){
+                alert(e.target.innerText)
+            }
+
+            for(let author of authors){
+                author.addEventListener("mouseover",alertName)
+            }
+            // EXTRA Write a JavaScript functionality that will remove the corresponding parent card from the DOM, upon clicking on their “Continue reading” link
+            const removeParent = function(){
+                let parents = document.querySelectorAll(".col-md-6");
+                console.log(parents)
+                for(let parent of parents){
+                let link = document.querySelectorAll(".col-md-6 a")
+                
+                }
+            }    
+            removeParent()
+        </script>
+
 </body>
 
 </html>
